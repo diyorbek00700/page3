@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url(./fonts/IbarraRealNova-Bold.ttf);
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url(./fonts/PublicSans-Bold.ttf);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+:root {
+  --primary-color: green;
+  --color-bg: #1f2641;
+  --containe-lg: 76%;
+  --container-md: 90%;
+  --container-sm: 94%;
+  --transition: all 0.4s ease-in-out;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.b11 {
+  margin: 0 auto;
+}
+.nav-list {
+  display: flex;
+  gap: 100px;
+  margin-left: 200px;
+}
+.nav-link {
+  color: #33323d;
+  transition: all 0.4s ease-in-out;
+}
+.nav-link:hover {
+  color: #5fb4a2;
+}
+
+.nav > button {
+  display: none;
+}
+
+.nav {
+  margin: 20px auto;
+}
+.b1 {
+  margin-top: 100px;
+}
+.ww {
+  display: flex;
+  padding: 50px;
+  gap: 500px;
+}
+.text {
+  width: 400px;
+  padding-left: 80px;
+  font-size: 40px;
+  font-family: "Ibarra Real Nova";
+}
+.desc {
+  width: 400px;
+  padding-right: 50px;
+  line-height: 25px;
+  font-size: 16px;
+}
+.logo1 {
+  margin-top: 30px;
+}
+.hr {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.b2 {
+  margin: 100px auto;
+}
+.wwe {
+  margin-left: 850px;
+}
+.text1 {
+  font-size: 40px;
+  padding-left: 130px;
+  font-family: "Ibarra Real Nova";
+}
+.vv1 {
+  font-size: 20px;
+  font-family:"Public Sans";
+
+}
+.text2 {
+  width: 450px;
+  padding: 10px;
+  margin-top: 10px;
+  background: rgb(214, 213, 213);
+  border: none;
+  border-radius: 4px;
+}
+
+.v2 {
+  margin-top: 30px;
+}
+.v3 {
+  margin-top: 30px;
+  height: 100px;
+}
+.n1 {
+  margin-top: 10px;
+}
+
+.foot {
+  width: 1440px;
+  margin: 0 auto;
+  background: #33323d;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+}
+.list1 {
+  display: flex;
+  gap: 50px;
+}
+.link1 {
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+.link1:hover {
+  color: green;
+}
+
+@media (max-width: 460px) {
+  .nav > button {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: rgb(100, 35, 35);
+    cursor: pointer;
+    border: transparent;
+  }
+  .nav-list {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    width: 18rem;
+    height: fit-content;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
+  .nav-list > li {
+    width: 100%;
+    height: 5.8rem;
+    animation: anime 400ms linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+  }
+  .nav > button#closebtn {
+    display: none;
+  }
+  .nav-list > li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+  .nav-list > li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+  @keyframes anime {
+    0% {
+      transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+    }
+    100% {
+      transform: rotateZ(0) rotateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .nav-list > li > a {
+    background: greenyellow;
+    box-shadow: -4rem 6rem 10rem #000;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .nav-list > li > a:hover {
+    background: rgb(191, 219, 150);
+    color: white;
+  }
+
+  .ww {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 500px;
+  }
+
+  .hr {
+    width: 500px;
+  }
+  .wwe{
+    margin-left: 500px;
+    margin-top: 50px;
+  }
+  .text1{
+    margin-left: 500px;
+
+  }
+  .nav{
+    width: 500px;
+  }
+
+  .foot{
+    width: 500px;
+  }
+}
