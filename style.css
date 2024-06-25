@@ -145,6 +145,24 @@
   color: green;
 }
 
+
+
+.v123{
+  color: white;
+  background: #1f2641;
+  transition: all 0.4s ease-in-out;
+  width: 150px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 850px;
+}
+
+.v123:hover{
+  background: white;
+  color: #1f2641;
+  border: 1px solid rgb(39, 39, 52);
+}
+
 @media (max-width: 460px) {
   .nav > button {
     display: inline-block;
@@ -153,6 +171,9 @@
     cursor: pointer;
     border: transparent;
   }
+  
+
+
   .nav-list {
     position: fixed;
     top: 5rem;
